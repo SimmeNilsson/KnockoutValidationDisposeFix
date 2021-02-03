@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Current knockout validation</title>
+    </head>
+    <body>
+        <form>
+            <div data-bind="foreach: list">
+                <div>
+                    <label data-bind="text: name"></label>
+                    <input type="text" data-bind="value: description"/>
+                </div>
+                <br>
+            </div>
+
+            <button type="button" data-bind="click: validate">Validate</button>
+            <button type="button" data-bind="click: clearErrors">Clear Errors</button>
+        </form>
+
+        <script src="knockout.js"></script>
+        <script src="knockout.validation.js"></script>
+        <script src="current.js"></script>
+    </body>
+</html>
